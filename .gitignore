@@ -1,3 +1,5 @@
+#.gitignore excluant node_modules
+
 # Dépendances npm
 node_modules/
 

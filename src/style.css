@@ -1,0 +1,24 @@
+:root,
+[data-bs-theme='light'] {
+  --bs-primary: #ef5552;
+  --bs-primary-rgb: 239, 85, 82;
+}
+/* Surcharge d'une couleur Bootstrap et son utilisation */
+
+@font-face {
+  src: url('/assets/fonts/tektur/Tektur-Regular.ttf') format('truetype');
+  font-family: 'Tektur';
+  font-style: 'regular';
+}
+
+@font-face {
+  src: url('/assets/fonts/tektur/Tektur-SemiBold.ttf') format('truetype');
+  font-family: 'Tektur';
+  font-style: 'semibold';
+}
+
+@font-face {
+  src: url('/assets/fonts/tektur/Tektur-Bold.ttf') format('truetype');
+  font-family: 'Tektur';
+  font-style: 'bold';
+}
