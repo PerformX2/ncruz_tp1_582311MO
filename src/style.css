@@ -1,7 +1,36 @@
 :root,
 [data-bs-theme='light'] {
-  --bs-primary: #ef5552;
-  --bs-primary-rgb: 239, 85, 82;
+  --bs-primary: #343a40;
+  --bs-primary-rgb: 52, 58, 64;
+
+  --bs-secondary: #ffffff;
+  --bs-secondary-rgb: 255, 255, 255;
+
+  --bs-body-bg: var(--bs-secondary);
+  --bs-body-color: #212529;
+
+  --bs-danger: #f73a3a;
+  --bs-danger-rgb: 247, 58, 58;
+
+  --bs-info: #091d64;
+  --bs-info-rgb: 9, 29, 100;
+}
+
+[data-bs-theme='dark'] {
+  --bs-primary: #000000;
+  --bs-primary-rgb: 0, 0, 0;
+
+  --bs-secondary: #343a40;
+  --bs-secondary-rgb: 52, 58, 64;
+
+  --bs-body-bg: var(--bs-secondary);
+  --bs-body-color: #f8f9fa;
+
+  --bs-danger: #f73a3a;
+  --bs-danger-rgb: 247, 58, 58;
+
+  --bs-info: #091d64;
+  --bs-info-rgb: 9, 29, 100;
 }
 
 @font-face {
@@ -25,9 +54,14 @@
   font-style: 'bold';
 }
 
-body {
-  font-family: 'Tektur', sans-serif;
-  font-weight: 400;
+.dark-mode {
+  background-color: #111111 !important;
+  color: #fff !important;
+}
+
+.dark-mode .card {
+  background-color: #111111;
+  color: #fff;
 }
 
 h1,
