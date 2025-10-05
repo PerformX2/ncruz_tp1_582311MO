@@ -1,0 +1,23 @@
+{
+  "name": "ncruz_tp1_582311mo",
+  "version": "1.0.0",
+  "description": "Bienvenue dans mon répertoire!  Voici mon répositoire Github pour le travail personel 1 de Web 3 (Collège Montmorency A25).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerformX2/ncruz_tp1_582311MO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PerformX2/ncruz_tp1_582311MO/issues"
+  },
+  "homepage": "https://github.com/PerformX2/ncruz_tp1_582311MO#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
