@@ -1,6 +1,4 @@
-#.gitignore excluant node_modules
-
-# Dépendances npm
+# Dépendances npm 
 node_modules/
 
 # Vscode

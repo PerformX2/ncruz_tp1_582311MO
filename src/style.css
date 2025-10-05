@@ -3,22 +3,37 @@
   --bs-primary: #ef5552;
   --bs-primary-rgb: 239, 85, 82;
 }
-/* Surcharge d'une couleur Bootstrap et son utilisation */
 
 @font-face {
   src: url('/assets/fonts/tektur/Tektur-Regular.ttf') format('truetype');
   font-family: 'Tektur';
+  font-weight: 400;
   font-style: 'regular';
 }
 
 @font-face {
   src: url('/assets/fonts/tektur/Tektur-SemiBold.ttf') format('truetype');
   font-family: 'Tektur';
+  font-weight: 600;
   font-style: 'semibold';
 }
 
 @font-face {
   src: url('/assets/fonts/tektur/Tektur-Bold.ttf') format('truetype');
   font-family: 'Tektur';
+  font-weight: 700;
   font-style: 'bold';
+}
+
+body {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 700;
 }
