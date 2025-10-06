@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,20 +8,25 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
 
   <body>
-    <script src="./src/scripts.js"></script>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">GameCritiques</a>
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-controller"></i> GameCritiques
+        </a>
+
         <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="#">Accueil</a>
             </li>
@@ -29,7 +34,10 @@
             <li class="nav-item"><a class="nav-link" href="#">Top Jeux</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           </ul>
-          <button class="btn btn-outline-light" id="toggle-dark">DARK</button>
+
+          <button class="btn btn-outline-light ms-lg-3" id="toggle-dark">
+            <i class="bi bi-moon-fill"></i>
+          </button>
         </div>
       </div>
     </nav>
@@ -45,7 +53,7 @@
     <main class="container my-5">
       <div class="row g-4">
         <div class="col-lg-8">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm h-100">
             <div class="card-body">
               <h2 class="card-title mb-4">Un classique intemporel ?</h2>
               <p>
@@ -79,35 +87,36 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header bg-info text-white">Informations</div>
-          <div class="card-body">
-            <ul class="list-unstyled mb-0">
-              <li><strong>Développeur :</strong> Nintendo</li>
-              <li><strong>Plateforme :</strong> Wii</li>
-              <li><strong>Date de sortie :</strong> 2007</li>
-              <li><strong>Genre :</strong> Plateforme 3D</li>
-              <li><strong>Mode :</strong> Solo</li>
+
+        <div class="col-lg-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-info text-white">Informations</div>
+            <div class="card-body">
+              <ul class="list-unstyled mb-0">
+                <li><strong>Développeur :</strong> Nintendo</li>
+                <li><strong>Plateforme :</strong> Wii</li>
+                <li><strong>Date de sortie :</strong> 2007</li>
+                <li><strong>Genre :</strong> Plateforme 3D</li>
+                <li><strong>Mode :</strong> Solo</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <div class="card-header bg-danger text-white">Autres critiques</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">New Super Mario Bros. Wii</li>
+              <li class="list-group-item">
+                The Legend of Zelda: Twilight Princess
+              </li>
+              <li class="list-group-item">Metroid Prime 3: Corruption</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card shadow-sm">
-          <div class="card-header bg-danger text-white">Autres critiques</div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">New Super Mario Bros. Wii</li>
-            <li class="list-group-item">
-              The Legend of Zelda: Twilight Princess
-            </li>
-            <li class="list-group-item">Metroid Prime 3: Corruption</li>
-          </ul>
-        </div>
-      </div>
     </main>
-  </body>
 
-  <footer></footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/scripts.js"></script>
+  </body>
 </html>

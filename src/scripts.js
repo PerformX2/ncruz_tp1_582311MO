@@ -1,25 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
   const btn = document.getElementById('toggle-dark');
-  if (!btn) return;
+  const html = document.documentElement;
 
-  const saved = localStorage.getItem('site-theme');
-  if (saved === 'dark') {
-    document.body.classList.add('dark-mode');
-    btn.textContent = 'LIGHT';
-  } else {
-    document.body.classList.remove('dark-mode');
-    btn.textContent = 'DARK';
-  }
+  const savedTheme = localStorage.getItem('site-theme') || 'light';
+  html.setAttribute('data-bs-theme', savedTheme);
+  updateButton(savedTheme);
 
   btn.addEventListener('click', function () {
-    const isDark = document.body.classList.toggle('dark-mode');
+    const currentTheme = html.getAttribute('data-bs-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
 
-    if (isDark) {
-      btn.textContent = 'LIGHT';
-      document.setItem('site-theme', 'dark');
-    } else {
-      btn.textContent = 'DARK';
-      document.setItem('site-theme', 'light');
-    }
+    html.setAttribute('data-bs-theme', newTheme);
+    localStorage.setItem('site-theme', newTheme);
+    updateButton(newTheme);
   });
+
+  function updateButton(theme) {
+    if (theme === 'dark') {
+      btn.innerHTML = '<i class="bi bi-sun-fill"></i>';
+    } else {
+      btn.innerHTML = '<i class="bi bi-moon-fill"></i>';
+    }
+  }
 });

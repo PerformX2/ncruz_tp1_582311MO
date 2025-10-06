@@ -10,58 +10,35 @@
   --bs-body-color: #212529;
 
   --bs-danger: #f73a3a;
-  --bs-danger-rgb: 247, 58, 58;
-
   --bs-info: #091d64;
-  --bs-info-rgb: 9, 29, 100;
 }
 
 [data-bs-theme='dark'] {
   --bs-primary: #000000;
-  --bs-primary-rgb: 0, 0, 0;
-
   --bs-secondary: #343a40;
-  --bs-secondary-rgb: 52, 58, 64;
-
   --bs-body-bg: var(--bs-secondary);
   --bs-body-color: #f8f9fa;
 
   --bs-danger: #f73a3a;
-  --bs-danger-rgb: 247, 58, 58;
-
-  --bs-info: #091d64;
-  --bs-info-rgb: 9, 29, 100;
+  --bs-info: #1e3ba5;
 }
 
 @font-face {
   src: url('/assets/fonts/tektur/Tektur-Regular.ttf') format('truetype');
   font-family: 'Tektur';
   font-weight: 400;
-  font-style: 'regular';
 }
 
 @font-face {
   src: url('/assets/fonts/tektur/Tektur-SemiBold.ttf') format('truetype');
   font-family: 'Tektur';
   font-weight: 600;
-  font-style: 'semibold';
 }
 
 @font-face {
   src: url('/assets/fonts/tektur/Tektur-Bold.ttf') format('truetype');
   font-family: 'Tektur';
   font-weight: 700;
-  font-style: 'bold';
-}
-
-.dark-mode {
-  background-color: #111111 !important;
-  color: #fff !important;
-}
-
-.dark-mode .card {
-  background-color: #111111;
-  color: #fff;
 }
 
 h1,
@@ -70,4 +47,18 @@ h3,
 .navbar-brand {
   font-family: 'Tektur', sans-serif;
   font-weight: 700;
+}
+
+[data-bs-theme='dark'] .card {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+[data-bs-theme='dark'] .list-group-item {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+[data-bs-theme='dark'] .bg-primary {
+  background-color: #000 !important;
 }
