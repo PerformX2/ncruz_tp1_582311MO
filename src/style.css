@@ -56,12 +56,12 @@ h3,
 }
 
 [data-bs-theme='dark'] .card {
-  background-color: #1b1b1b;
+  background-color: #343a40;
   color: #fff;
 }
 
 [data-bs-theme='dark'] .list-group-item {
-  background-color: #1b1b1b;
+  background-color: #343a40;
   color: #fff;
 }
 
