@@ -22,7 +22,12 @@
           <i class="bi bi-controller"></i> GameCritiques
         </a>
 
-        <button class="navbar-toggler" type="button">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="menu">
@@ -84,6 +89,41 @@
                 continue de briller comme une étoile dans l’histoire du jeu
                 vidéo.
               </p>
+
+              <button
+                class="btn btn-warning mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCritique"
+              >
+                <i class="bi bi-stars"></i> Lire la critique complète
+              </button>
+
+              <div
+                class="modal fade"
+                id="modalCritique"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header bg-warning text-dark">
+                      <h5 class="modal-title">Suite de la critique</h5>
+                      <button
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Super Mario Galaxy est un bijou de créativité et de
+                        gameplay. Chaque galaxie raconte une histoire et met le
+                        joueur face à une nouvelle idée, toujours ingénieuse. Un
+                        chef-d’œuvre intemporel.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

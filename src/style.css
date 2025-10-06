@@ -10,7 +10,10 @@
   --bs-body-color: #212529;
 
   --bs-danger: #f73a3a;
+  --bs-danger-rgb: 247, 58, 58;
+
   --bs-info: #091d64;
+  --bs-info-rgb: 9, 29, 100;
 }
 
 [data-bs-theme='dark'] {
@@ -20,7 +23,10 @@
   --bs-body-color: #f8f9fa;
 
   --bs-danger: #f73a3a;
+  --bs-danger-rgb: 247, 58, 58;
+
   --bs-info: #1e3ba5;
+  --bs-info-rgb: 30, 59, 165;
 }
 
 @font-face {
